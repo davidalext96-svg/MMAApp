@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Dojo · entrenamiento progresivo de artes marciales</title>
+<meta name="theme-color" content="#0E1116">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Entrenador progresivo de boxeo, muay thai, jiu-jitsu, judo y sambo: sesiones por niveles, cronómetro de rondas y animaciones de cada técnica.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-disc="hub">
+
+<header class="top">
+  <div class="top-in">
+    <button class="back" id="back" hidden aria-label="Volver al inicio">‹</button>
+    <div class="brand" id="brand">Dojo</div>
+    <div class="badge" id="streak"><b>0</b> días seguidos</div>
+  </div>
+</header>
+
+<main class="wrap" id="view"></main>
+
+<nav class="tabs"><div class="tabs-in" role="tablist">
+  <button class="tab" role="tab" data-tab="inicio" aria-selected="true">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</button>
+  <button class="tab" role="tab" data-tab="entrenar" aria-selected="false">
+    <svg viewBox="0 0 24 24"><path d="M4 9h3v6H4zM17 9h3v6h-3zM7 12h10M2 11h2v2H2zM20 11h2v2h-2z"/></svg>Entrenar</button>
+  <button class="tab" role="tab" data-tab="progreso" aria-selected="false">
+    <svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Progreso</button>
+  <button class="tab" role="tab" data-tab="perfil" aria-selected="false">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c.8-4 3.8-6 7.5-6s6.7 2 7.5 6"/></svg>Perfil</button>
+</div></nav>
+
+<div class="sheet" id="sheet" hidden><div class="sheet-in" id="sheetIn"></div></div>
+<div class="runner" id="runner" hidden><div class="runner-in" id="runnerIn"></div></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="js/engine.js"></script>
+<script src="js/data-boxeo.js"></script>
+<script src="js/data-muaythai.js"></script>
+<script src="js/data-bjj.js"></script>
+<script src="js/data-judo.js"></script>
+<script src="js/data-sambo.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
